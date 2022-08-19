@@ -17,3 +17,5 @@ CRIAR PROJETO ANGULAR
     - depois escolher como sera o estilo no caso sera em CSS
 
 SÓ AGUARDAR O ANGULAR INSTALAR AS DEPENDENCIAS DO PROJETO DO ANGULAR !    
+
+Pronto para usar
