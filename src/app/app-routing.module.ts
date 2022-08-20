@@ -1,7 +1,14 @@
-import { NgModule } from '@angular/core';
+// Centralizador de Recursos
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+// importar os componentes para criar o roteamento
+import { InterpolacaoComponent } from './componentes/interpolacao/interpolacao.component';
+import { PBindingComponent } from './componentes/p-binding/p-binding.component';
+const routes: Routes = [
+{path:'interpolacao', component: InterpolacaoComponent },
+{path: 'p-binding' , component: PBindingComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

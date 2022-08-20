@@ -1,0 +1,26 @@
+<!-- vincular, aqui, na view, cada uma das propriedades descritas
+no arquivo interpolacao.component.ts -->
+
+<div class="content">
+    <h2>{{ tituloComp }}</h2>
+    <br />
+
+    <span>O valor da propriedade x é {{ x }}</span>
+    <br />
+
+    <span>O array de nome é composto pelos seguintes valores: {{ umArray }}</span>
+    <br />
+
+    <span>A data de hoje éd: {{ dataHoje }}</span>
+    <br />
+
+    <span>O status boleano indicado na propriedade é: {{ statusBoleano }}</span>
+    <br />
+    <!-- OPERADOR TERNARIO UM SE -->
+    <span>{{ statusBoleano ? "Este é o texto exibido quando os Status for TRUE" : "Este é um texto exibido quando o Status for FALSE" }}</span>
+    <br />
+
+    <span>{{ exibirTexto() }}</span>
+    <br />
+
+</div>

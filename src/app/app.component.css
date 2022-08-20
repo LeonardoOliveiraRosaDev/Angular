@@ -42,21 +42,6 @@
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
   .content {
     display: flex;
     margin: 82px auto 32px;
@@ -290,4 +275,21 @@
       display: none;
       visibility: hidden;
     }
+  }
+
+  /* Estilos aplicados na tag de navegação*/
+  nav{
+    margin-top: 15px;
+  }
+  a:link, a:visited{
+    background-color: #424bef;
+    color: #eeeeee;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+
+  }
+  a:hover, a:active{
+    background-color: #027ef9;
   }

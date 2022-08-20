@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InterpolacaoComponent } from './componentes/interpolacao/interpolacao.component';
+import { PBindingComponent } from './componentes/p-binding/p-binding.component';
 
 @NgModule({
   declarations: [
     // este é o local para registrar cada um dos componentes do projeto
-    AppComponent
+    AppComponent,
+    InterpolacaoComponent,
+    PBindingComponent
   ],
   imports: [
     // este é o local para registrat cada um dos modulos de dependencia do projeto
