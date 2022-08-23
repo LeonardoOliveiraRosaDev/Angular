@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-two-way',
+  templateUrl: './two-way.component.html',
+  styleUrls: ['./two-way.component.css']
+})
+export class TwoWayComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  // Definir as propriedades para vincular na view
+  tituloComp: string = 'Implementação Two-Way Binding'
+
+  // Estabelecer a propriedade para vincular - via tow-way - na view
+  umTexto: string = ''
+
+}

@@ -282,14 +282,17 @@
     margin-top: 15px;
   }
   a:link, a:visited{
-    background-color: #424bef;
+    background-color: #020ff6;
     color: #eeeeee;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display:inline-block;
+    margin-left: 2px;
 
   }
   a:hover, a:active{
-    background-color: #027ef9;
+    background-color: #00a6ff;
+    color: black;
+    font-weight: bold;
   }

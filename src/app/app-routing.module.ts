@@ -5,9 +5,16 @@ import { RouterModule, Routes } from '@angular/router';
 // importar os componentes para criar o roteamento
 import { InterpolacaoComponent } from './componentes/interpolacao/interpolacao.component';
 import { PBindingComponent } from './componentes/p-binding/p-binding.component';
+import { EBindingComponent } from './componentes/e-binding/e-binding.component';
+import { TwoWayComponent } from './componentes/two-way/two-way.component';
+import { CPaiComponent } from './componentes/c-pai/c-pai.component';
 const routes: Routes = [
-{path:'interpolacao', component: InterpolacaoComponent },
-{path: 'p-binding' , component: PBindingComponent}
+{path:'interpolacao', component: InterpolacaoComponent},
+{path: 'p-binding' , component: PBindingComponent},
+{path: 'e-binding' , component: EBindingComponent},
+{path: 'two-way', component: TwoWayComponent},
+{path: 'rota-pai', component: CPaiComponent}
+
 ];
 
 @NgModule({
