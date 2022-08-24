@@ -9,6 +9,7 @@ import { EBindingComponent } from './componentes/e-binding/e-binding.component';
 import { TwoWayComponent } from './componentes/two-way/two-way.component';
 import { CPaiComponent } from './componentes/c-pai/c-pai.component';
 import { InputComponent } from './componentes/input/input.component';
+import { OutputComponent } from './componentes/output/output.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InputComponent } from './componentes/input/input.component';
     EBindingComponent,
     TwoWayComponent,
     CPaiComponent,
-    InputComponent
+    InputComponent,
+    OutputComponent
   ],
   imports: [
     // este é o local para registrat cada um dos modulos de dependencia do projeto

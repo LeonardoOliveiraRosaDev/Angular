@@ -13,7 +13,8 @@ const routes: Routes = [
 {path: 'p-binding' , component: PBindingComponent},
 {path: 'e-binding' , component: EBindingComponent},
 {path: 'two-way', component: TwoWayComponent},
-{path: 'rota-pai', component: CPaiComponent}
+{path: 'rota-pai', component: CPaiComponent},
+
 
 ];
 
