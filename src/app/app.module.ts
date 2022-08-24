@@ -10,6 +10,7 @@ import { TwoWayComponent } from './componentes/two-way/two-way.component';
 import { CPaiComponent } from './componentes/c-pai/c-pai.component';
 import { InputComponent } from './componentes/input/input.component';
 import { OutputComponent } from './componentes/output/output.component';
+import { NgIfComponent } from './componentes/ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OutputComponent } from './componentes/output/output.component';
     TwoWayComponent,
     CPaiComponent,
     InputComponent,
-    OutputComponent
+    OutputComponent,
+    NgIfComponent
   ],
   imports: [
     // este é o local para registrat cada um dos modulos de dependencia do projeto
