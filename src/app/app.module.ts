@@ -11,6 +11,8 @@ import { CPaiComponent } from './componentes/c-pai/c-pai.component';
 import { InputComponent } from './componentes/input/input.component';
 import { OutputComponent } from './componentes/output/output.component';
 import { NgIfComponent } from './componentes/ng-if/ng-if.component';
+import { NgForComponent } from './componentes/ng-for/ng-for.component';
+import { NgClassComponent } from './componentes/ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NgIfComponent } from './componentes/ng-if/ng-if.component';
     CPaiComponent,
     InputComponent,
     OutputComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgForComponent,
+    NgClassComponent
   ],
   imports: [
     // este é o local para registrat cada um dos modulos de dependencia do projeto
