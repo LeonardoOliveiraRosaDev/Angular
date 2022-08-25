@@ -1,0 +1,21 @@
+<div class = "content">
+    <h2>{{ tituloComp }}</h2>
+
+    <div [ngClass] = "'cores tamanho'">
+        <p>
+            Cor e Fontes alterados pelas propriedades CSS - descritas no arquivo .css do componente. Definicao de string.
+        </p>
+    </div>
+    
+    <div [ngClass] = "estiloAlterVar">
+        <p>
+            Cor e Fontes alterados pelas propriedades CSS - descritas no arquivo .ts do componente. Definicao de variavel na camada lógica
+        </p>
+    </div>
+
+    <div [ngClass] = "objCSS">
+        <p>
+            Cor e Fontes alterados pelas propriedades CSS - descritas no objeto .ts do componente. Definição de objeto referenciado a partir da camada lógica
+        </p>
+    </div>
+</div>

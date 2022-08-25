@@ -14,4 +14,40 @@
     <p *ngIf = "!exiba">    <!-- Qual é o seu valor ? FALSE-->
          Texto exibido quando o checkbox estiver "DESATIVADO" - quando a condição for FALSE.
     </p>
+
+<!-- Trabalhar com *ngIf/ Else e construir uma "miniview" -->
+
+    <h3>Uso da diretiva *ngIf/else com ng-template</h3>
+    <p *ngIf = "exiba; else primeiraMiniView">
+         Texto exibido quando o checkbox estiver "ATIVADO" - quando a condição for TRUE
+    </p>
+
+    <!-- Quando a condição for avaliada como FALSE a estrutura ng-templatet sereá eexibida na tela -->
+    <ng-template #primeiraMiniView><!-- Estamos criando uma view dentro de outra view na verdade uma view dentro da ng-if.component.html -->
+        Texto exibido quando o checkbox estiver "DESATIVADO" - quando a condição for avaliada como FALSE. Dessa forma a <i>"miniview"</i> ng-template é carregada na tela.    
+    </ng-template>
+
+    <!-- uso diretiva *ngIf/then/else oara exibição de conteúdo dispostos dentro do ng-template -->
+    <h3>Uso da diretiva *ngIf/then/else</h3>
+    <p *ngIf = "exiba; then miniViewThen; else miniViewElse">
+        ---------------------------------------------------------------------------------
+        Este conteúdo não será exibido em nenhum momento
+    </p>
+    <!-- constrtuir os ng-templates ("miniviews") -->
+    <ng-template #miniViewThen>
+        Texto exibido quando o checkbox estiver "ATIVADO" - quando a condição for TRUE
+    </ng-template>
+    <ng-template #miniViewElse>
+        Texto exibido quando o checkbox estiver "DESATIVADO" - quando a condição for avaliada como FALSE. Dessa forma a <i>"miniview"</i> ng-template é carregada na tela.   
+    </ng-template>
+
+    <!-- Observer o comportamento do atributo hidden aplicado na view com um property binding  -->
+    <h3>Uso e comportamento do atributo hidden</h3>
+    <p [hidden] = "exiba"> <!-- qual é o valor? R: FALSE-->
+        Texto exibido quando o checkbox estiver "DESATIVADO" - quando a condição avaliada  for FALSE.
+    </p>
+    <p [hidden] = "!exiba">
+        Texto exibido quando o checkbox estiver "ATIVADO" - quando a condição for TRUE
+    </p>
+
 </div>

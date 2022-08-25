@@ -1,0 +1,9 @@
+/* Definir classes de estilo para que sejam manipuladas pela diretiva ngClass */
+
+.cores{
+    color: rgb(10, 2, 248);
+}
+
+.tamanho{
+    font-size: 45px;
+}
