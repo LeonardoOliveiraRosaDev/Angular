@@ -18,16 +18,16 @@ export class PipeComponent implements OnInit {
   // criasr um conjunto de propriedade que serão vinculadas na view e manipuladas com os pipes
   umTexto: string = 'TEXTO EM MAIÚSCULO - PODE SER ALTERADO PARA MINÚSCULO'
   numFloat: number = 76.200
-  nunData: Date = new Date()
-  conjuntoNumerico: number = 20222022.20222022
+  umaData: Date = new Date()
+  conjuntoNumerico: number = 22315222.202244442222
   conjuntoDados: any = {
     nome: 'Leonardo',
     endereco:{ 
-      rua: 'a Dr. Rubens Meireles',
-      numero: '105'
+      rua: 'Rua do Altar',
+      numero: '1995'
   }
   }
-  mesesAno: Array<string> = [ 'Jan', 'Fev', 'Mar', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov','Dez']
+  mesesAno: Array<string> = [ 'Jan', 'Fev', 'Mar', 'Abr', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov','Dez']
   numPercent: number = 0.41
 }
  

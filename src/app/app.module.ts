@@ -18,6 +18,13 @@ import { AlterarTextoDirective } from './alterar-texto.directive';
 import { DirCustomComponent } from './componentes/dir-custom/dir-custom.component';
 import { PipeComponent } from './componentes/pipe/pipe.component';
 
+// Importar os recursos nescessarios para "regionalizar" a transformação da moeda em Real Brasileira adequadamente
+import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+// chamando uma funcao 
+registerLocaleData(localePt, 'pt')
 @NgModule({
   declarations: [
     // este é o local para registrar cada um dos componentes do projeto
@@ -45,6 +52,14 @@ import { PipeComponent } from './componentes/pipe/pipe.component';
   ],
   providers: [
     // este e o local para registrar qualquer service do projeto
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt'
+    },
+    {
+      provide: DEFAULT_CURRENCY_CODE,
+      useValue:'BRL'
+    }
   ],
   bootstrap: [
     // este é o local onde está indicado qual sera o primeiro elemento

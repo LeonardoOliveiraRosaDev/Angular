@@ -1,3 +1,55 @@
 <div class="content">
+    <!-- Interpolacao titulo do nosso componente -->
     <h2>{{ tituloComp }}</h2>
+    <br /><br />
+
+    <table class="bordaTabela">
+        <thead> <!--tabela de cabeçalho-->
+            <!-- table row - 1 - linha -->
+            <tr>
+                <!-- table colunms - 8 - colunas -->
+                <th>Lowercase</th>
+                <th>Upercase</th>
+                <th>Currency</th>
+                <th>Date</th>
+                <th>Decimal</th>
+                <th>Json</th>
+                <th>Slice</th>
+                <th>Percent</th>
+            </tr>
+        </thead>
+        <!--  -->
+        <tbody> <!-- Tabela de corpo-->
+            <!-- table row -->
+            <tr>
+                <!-- table data -->
+                <!-- Transformar e minusculo -->
+                <td>{{ umTexto | lowercase }}</td>
+                <!-- Transformar em maiusculo -->
+                <td>{{ tituloComp | uppercase }}</td>
+                <td>
+                    <!-- Moeda Americana Dolar -->
+                    {{numFloat | currency: "USD"}}
+                    <br />
+                    <!-- Moeda Brasileira Real-->
+                    {{numFloat | currency: "BRL"}}
+                </td>
+                <td>
+                    <!-- Data Padrão -->
+                    {{ umaData | date: "d/M/y" }}
+                    <br />
+                    <!-- Data Abreviada -->
+                    {{ umaData | date: "shortTime" }}
+                </td>
+                <!--  -->
+                <td>{{ conjuntoNumerico | number: "3.1-6" }}</td>
+                <!--  -->
+                <td>{{ conjuntoDados | json }}</td>
+                <!--  -->
+                <td>{{ mesesAno | slice: 2:6 }}</td>
+                <!--  -->
+                <td>{{ numPercent | percent }}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
