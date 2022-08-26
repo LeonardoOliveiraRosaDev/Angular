@@ -15,7 +15,18 @@ export class PipeComponent implements OnInit {
   // Definir a propriedade de titulo do componente.
   tituloComp: string = 'Implementação do Pipes'
 
-  // criasr um conjunto de propriedade que serão vinculadas na view e manipuladas com os pipes
+    // Propriedades para vincular a view e aplicar o pipe custom
+    raizUm: number = 49
+    raizDois: number = 81
+    raizTres: number = 144
+  
+}
+ 
+
+
+/*
+
+// criar um conjunto de propriedade que serão vinculadas na view e manipuladas com os pipes
   umTexto: string = 'TEXTO EM MAIÚSCULO - PODE SER ALTERADO PARA MINÚSCULO'
   numFloat: number = 76.200
   umaData: Date = new Date()
@@ -29,5 +40,5 @@ export class PipeComponent implements OnInit {
   }
   mesesAno: Array<string> = [ 'Jan', 'Fev', 'Mar', 'Abr', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov','Dez']
   numPercent: number = 0.41
-}
- 
+
+*/
