@@ -14,6 +14,7 @@ import { NgClassComponent } from './componentes/ng-class/ng-class.component';
 import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
 import { DirCustomComponent } from './componentes/dir-custom/dir-custom.component';
 import { PipeComponent } from './componentes/pipe/pipe.component';
+import { FormularioComponent } from './componentes/formulario/formulario.component';
 
 const routes: Routes = [
 {path:'interpolacao', component: InterpolacaoComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
 {path: 'ng-class', component: NgClassComponent},
 {path: 'ng-style', component: NgStyleComponent},
 {path: 'dir-custom', component: DirCustomComponent},
-{path: 'pipe', component: PipeComponent}
+{path: 'pipe', component: PipeComponent},
+{path: 'formulario', component: FormularioComponent}
 ];
 
 @NgModule({

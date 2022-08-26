@@ -23,6 +23,7 @@ import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { PipeRaizQuadradaPipe } from './pipe-raiz-quadrada.pipe';
+import { FormularioComponent } from './componentes/formulario/formulario.component';
 
 // chamando uma funcao 
 registerLocaleData(localePt, 'pt')
@@ -44,7 +45,8 @@ registerLocaleData(localePt, 'pt')
     AlterarTextoDirective,
     DirCustomComponent,
     PipeComponent,
-    PipeRaizQuadradaPipe
+    PipeRaizQuadradaPipe,
+    FormularioComponent
   ],
   imports: [
     // este é o local para registrat cada um dos modulos de dependencia do projeto
