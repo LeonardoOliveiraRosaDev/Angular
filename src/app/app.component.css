@@ -288,13 +288,13 @@
     text-align: center;
     text-decoration: none;
     display:inline-block;
-    margin-left: 2px;
-    border-radius: 10px;
+    
+    
 
   }
   a:hover, a:active{
     background-color: #00a6ff;
     color: black;
     font-weight: bold;
-    border-radius: 10px;
+    
   }
