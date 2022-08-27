@@ -1,7 +1,5 @@
-// Centralizador de Recursos
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 // importar os componentes para criar o roteamento
 import { InterpolacaoComponent } from './componentes/interpolacao/interpolacao.component';
 import { PBindingComponent } from './componentes/p-binding/p-binding.component';
@@ -17,18 +15,18 @@ import { PipeComponent } from './componentes/pipe/pipe.component';
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 
 const routes: Routes = [
-{path:'interpolacao', component: InterpolacaoComponent},
-{path: 'p-binding' , component: PBindingComponent},
-{path: 'e-binding' , component: EBindingComponent},
-{path: 'two-way', component: TwoWayComponent},
-{path: 'rota-pai', component: CPaiComponent},
-{path: 'ng-if', component: NgIfComponent},
-{path: 'ng-for', component: NgForComponent},
-{path: 'ng-class', component: NgClassComponent},
-{path: 'ng-style', component: NgStyleComponent},
-{path: 'dir-custom', component: DirCustomComponent},
-{path: 'pipe', component: PipeComponent},
-{path: 'formulario', component: FormularioComponent}
+  {path:'interpolacao', component: InterpolacaoComponent},
+  {path: 'p-binding', component: PBindingComponent},
+  {path: 'e-binding', component: EBindingComponent},
+  {path: 'two-way', component: TwoWayComponent},
+  {path: 'rota-pai', component: CPaiComponent},
+  {path: 'ng-if', component: NgIfComponent},
+  {path: 'ng-for', component: NgForComponent},
+  {path: 'ng-class', component: NgClassComponent},
+  {path: 'ng-style', component: NgStyleComponent},
+  {path: 'dir-custom', component: DirCustomComponent},
+  {path: 'pipe', component: PipeComponent},
+  {path: 'formulario', component: FormularioComponent}
 ];
 
 @NgModule({

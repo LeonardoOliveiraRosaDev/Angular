@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolacaoComponent } from './componentes/interpolacao/interpolacao.component';
@@ -16,16 +18,16 @@ import { NgClassComponent } from './componentes/ng-class/ng-class.component';
 import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
 import { AlterarTextoDirective } from './alterar-texto.directive';
 import { DirCustomComponent } from './componentes/dir-custom/dir-custom.component';
-import { PipeComponent } from './componentes/pipe/pipe.component';
+import { PipeComponent } from './componentes/pipe/pipe.component'; 
 
-// Importar os recursos nescessarios para "regionalizar" a transformação da moeda em Real Brasileira adequadamente
+// importar os recursos necessários para "regionalizar" a tranasformação da moeda em Real Brasileiro - adequadamente
 import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
-import { registerLocaleData } from '@angular/common';
+import {registerLocaleData } from '@angular/common';
+
 import { PipeRaizQuadradaPipe } from './pipe-raiz-quadrada.pipe';
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 
-// chamando uma funcao 
 registerLocaleData(localePt, 'pt')
 @NgModule({
   declarations: [
@@ -49,25 +51,26 @@ registerLocaleData(localePt, 'pt')
     FormularioComponent
   ],
   imports: [
-    // este é o local para registrat cada um dos modulos de dependencia do projeto
+    // este é o local para registrar cada um dos modulos de dependencia do projeto
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
-    // este e o local para registrar qualquer service do projeto
+    // este é o local para registrar qualquer service do projeto
     {
       provide: LOCALE_ID,
       useValue: 'pt'
     },
     {
       provide: DEFAULT_CURRENCY_CODE,
-      useValue:'BRL'
+      useValue: 'BRL'
     }
   ],
   bootstrap: [
-    // este é o local onde está indicado qual sera o primeiro elemento
-    // que surgira na tela assim que o projeto for executado
-    AppComponent]
+    // este é o local onde está indicado qual será o primeiro elemento que srugirá na tela assim qeu o projeot for executado
+    AppComponent
+  ]
 })
 export class AppModule { }
