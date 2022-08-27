@@ -13,7 +13,7 @@
         <input type = "password" name = "senha" placeholder = "Informe sua senha" formControlName = "senha" />
         <br /><br />
 
-        <input type = "submit" value = "Enviar Dados" />
+        <input type = "submit" [disabled] = "!dadosForm.valid" value = "Enviar Dados" />
     </form>
     <br />
     <!-- exibir o valor das propriedades nome e email-->

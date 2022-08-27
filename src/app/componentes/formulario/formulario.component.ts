@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
@@ -22,9 +22,12 @@ export class FormularioComponent implements OnInit {
   // para controlar o formulario
   ngOnInit(): void {
     this.dadosForm = new FormGroup({
-      nome: new FormControl('Angular Framework'),
-      email: new FormControl('angular@mail.com'),
-      senha: new FormControl('@#$%')
+      nome: new FormControl('', Validators.compose([Validators.required])),
+      email: new FormControl('', Validators.compose([
+        Validators.required, 
+        Validators.pattern('[^ @]*@[^ @]*')
+      ])),
+      senha: new FormControl('')
     })
   }
 // criar um método/função para exibir o "controle" que está sendo exercido - pela camada lógica - no formulário
