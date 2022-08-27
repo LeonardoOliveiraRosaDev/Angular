@@ -25,10 +25,22 @@ export class FormularioComponent implements OnInit {
       nome: new FormControl('', Validators.compose([Validators.required])),
       email: new FormControl('', Validators.compose([
         Validators.required, 
-        Validators.pattern('[^ @]*@[^ @]*')
+        // Validators.pattern('[^ @]*@[^ @]*')
+        Validators.email
       ])),
       senha: new FormControl('')
     })
+  }
+
+  // criar um método/função para validar o campo senha 
+  validacaoSenha(valoresSenha: any){
+    // Verificar a quantidade de caracteres inseridos no input
+    if(valoresSenha.value.length < 5){
+
+      return {senha:true}
+
+    }
+    return null
   }
 // criar um método/função para exibir o "controle" que está sendo exercido - pela camada lógica - no formulário
   exibidoraDados(umDado: any): void{
